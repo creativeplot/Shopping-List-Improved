@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Sixtyfour:SCAN@-15&display=swap');
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+    background-color: #c1c1c1;
+}
+
+header {
+    font-family: "Bungee Spice", sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 550px;
+    margin-top: 50px;
+}
+
+#figure-title {
+    display: flex;
+    max-width: 550px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+h1{
+    padding-left: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline-style: none;
+}
+
+#add-btn {
+    background-color: black;
+    color: whitesmoke;
+    width: 120px;
+    padding: 0.3rem;
+}
+#organize-btn {
+    position: relative;
+    top: -40px;
+    left: 130px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#enter {
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+#filter {
+    margin-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: inherit;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 100%;
+    max-width: 550px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 0.4rem;
+    gap: 0.8rem 0.8rem;
+}
+
+li {
+    list-style: none;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem;
+    font-size: 1.3rem;
+    border-radius: 8px;
+}
+li:hover {
+    cursor:grab;
+}
+li:active {
+    cursor: grabbing;
+}
+
+li button {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 15px;
+    border: none;
+    color: red;
+    /* font-size: 1rem; */
+}
+
+button {
+    font-family: "Oswald", sans-serif;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#clear-btn {
+    margin-top: 1.8rem;
+    background-color: inherit;
+    font-weight: 100;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.edit-mode {
+    color: #888;
+}
+
+.over {
+    outline: 3px dashed #0055ff;
+    outline-offset: -2px;
+}
+
+
+footer {
+    width: 100%;
+}

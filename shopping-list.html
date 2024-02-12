@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="creativePlot">
+    <meta name="description" content="this is a to do list for me to develop my skills">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="shopping-list.css">
+    <script src="shopping-list.js" defer></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <section id="figure-title">
+
+        <figure>
+            <img src="note.png" alt="list icon" width="64" height="64">
+        </figure>
+        <h1>Shopping List</h1>
+
+        </section>
+
+
+        <form id="item-form">
+        <label for="enter"></label>
+        <input type="text" id="enter" name="Enter Item" placeholder="Enter Item">
+        <button type="submit" id="add-btn"> + Add Item</button>
+        </form>
+
+        <button id="organize-btn">Org</button>
+
+
+        <label for="filter"></label>
+        <input type="text" id="filter" name="Filter Items" placeholder="Filter Items">
+    </header>
+
+    <main>
+
+        <ul id="list-wrapper item-list">
+        </ul>
+
+        <button id="clear-btn">Clear All</button>
+
+    </main>
+    <footer>
+        <!-- <p>Nothing to see here!</p> -->
+    </footer>
+</body>
+</html>
